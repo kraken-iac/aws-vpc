@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: aws-vpc
 repo: github.com/kraken-iac/aws-vpc
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: kraken-iac.eoinfennessy.com
+  group: aws
+  kind: VPC
+  path: github.com/kraken-iac/aws-vpc/api/v1alpha1
+  version: v1alpha1
 version: "3"
